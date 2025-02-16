@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: yellow;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header-footer {
+            background-color: grey;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: blue;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: blue;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            width: 65%;
+            background-color: limegreen;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .sidebar:hover {
+            background-color: darkblue;
+        }
+        .sidebar h3:first-of-type {
+            text-decoration: underline;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        form label {
+            margin-right: 5px;
+        }
+        input[type="text"], select {
+            width: 150px;
+            transition: width 0.3s;
+        }
+        input[type="text"]:focus {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-footer">
+        <h1>Lab 3 - Rock Paper Scissors</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="https://finance.yahoo.com/?guccounter=1" target="_blank">Yahoo Finance</a></li>
+            <li><a href="https://gemini.google.com/" target="_blank">Gemini</a></li>
+            <li><a href="https://testudo.umd.edu/" target="_blank">Testudo</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main class="main-content">
+            <h2>Please choose one of the following</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="choice">Your choice:</label>
+                <select id="choice" name="choice">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        
+        <aside class="sidebar">
+            <h3>Rules</h3>
+            <h3>You must choose Rock, Paper or Scissors</h3>
+            <h3>The combos are as follows:</h3>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="header-footer">
+        <p>&copy; Quentin Diowuta Loth</p>
+    </footer>
+
+</body>
+</html>
